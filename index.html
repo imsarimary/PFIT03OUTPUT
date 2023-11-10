@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> My Personal Blogsite</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 40%;
+    width: 100%;
+    background-color:black;
+}
+.nav1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 100px gray;
+}
+.nav1 .Logo1{
+    width: 100px;
+    height: 40px;
+    border: 1px solid deeppink;
+    position: relative;
+    left: -80px;
+    top: 30px;
+}
+.nav1 .Logo1 h3{
+    color: white;
+    font-family: 'Times New Roman';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav1 .Logo1 h3:hover{
+    color:deeppink ;
+}
+.nav1 .tabs1{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav1 .tabs1 a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial;
+    transition: 0.5s;
+}
+.nav1 .tabs1 a:hover{
+    color: black;
+}
+.nav1 .tabs1 a:nth-child(1):hover{
+    color: black;
+}
+.nav1 .Log1{
+    width: 165px;
+    height: 100px;
+    position: relative;
+    right: -65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1 .Log1 {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.nav1 .Log1 a:nth-child(1){
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: deeppink;
+    text-decoration: none;
+}
+
+.nav1 .Log1 a:nth-child(1):hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.nav1 .Log1 a:nth-child(2){
+    padding: 10px 20px;
+    border: 1px solid deeppink;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.nav1 .Log1 a:nth-child(2):hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+/*-----content-----*/
+.content1{
+    width: 910px;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    right: 13%;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+span{
+    color: deeppink;
+}
+span:hover{
+    color: white;
+}
+.content1 .explore1{
+    width: 150px;
+    height: 40px;
+    background: deeppink;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content1 .explore1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+ .content .explore1:hover{
+    background-color: white;
+}
+.image1{
+    width: 90%;
+    height: 120%;
+    margin-top: -35%;
+    position: absolute;
+    right: -45%;
+}
+.image1 img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image1:hover .shape{
+    bottom: 40px;
+}
+.image1:hover .myself{
+    left: 45;
+}
+#img-div{
+        width: 80%;
+        padding: 5px;
+        margin: 15px auto;
+        border: 1px solid black;
+    }
+    #img_div:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    img{
+        margin: 2px;
+        width: 500px;
+        height: 300px;
+        bottom:50%;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+        </style>
+    </style>
+   
+    <body>
+        <div class="nav1">
+            <div class="Logo1"><h3> SariBlogsite</h3></div>
+            <div class="tabs1">
+                <a href="myhome.html"> Home</a>
+                <a href="photogallery.html"> Photo Gallery</a>
+                <a href="aboiutmyself.html"> About me</a>
+            </div>
+            <div class="Log1">
+                <a href="login.html">Login</a>
+                <a href="adminregister.php">Admin</a>
+            </div>
+            </div>
+            <div class="content1"><br><br>
+                <small>BLOGSITE</small><br>
+                <h1><span>MANAGEMENT</span></h1>
+                <h3>SYSTEM</h3>
+                <button class="explore1"><a href="login.html">Explore now</a></button>
+                <div class="image1">
+                    <img src="images/background.png" class="shape">
+                    <img src="images/profile6.png" class="myself">
+                </div>
+            </div>
+    </body>
+</html>
+            
